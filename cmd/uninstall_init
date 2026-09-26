@@ -1,0 +1,8 @@
+#!/bin/bash
+
+### This script is called before the user uninstalls the application.
+### 先停止容器，避免卸载过程中容器持续运行占用资源。
+
+docker stop wxedge-app 2>/dev/null || true
+
+exit 0
