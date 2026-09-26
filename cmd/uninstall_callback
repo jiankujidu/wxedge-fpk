@@ -1,0 +1,13 @@
+#!/bin/bash
+
+### This script is called after the user uninstalls the application.
+### 清理容器与镜像：appcenter 仅停止容器，此处补删容器与官方镜像，保证卸载干净。
+### 数据目录（shares/wxedge/data）保留，供重装复用。
+
+# 删除应用容器（幂等：容器不存在时忽略）
+docker rm -f wxedge-app 2>/dev/null || true
+
+# 删除官方镜像（幂等：被其他容器引用或不存在时忽略）
+docker rmi images-cluster.xycloud.com/wxedge/wxedge:latest 2>/dev/null || true
+
+exit 0
