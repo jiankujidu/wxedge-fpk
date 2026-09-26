@@ -1,0 +1,8 @@
+{
+    "defaults":
+    {
+        "run-as": "package"
+    },
+    "username": "docker-wxedge",
+    "groupname": "docker-wxedge"
+}
