@@ -1,0 +1,20 @@
+{
+  "docker-project": {
+    "projects": [
+      {
+        "name": "wxedge",
+        "path": "docker"
+      }
+    ]
+  },
+  "data-share": {
+    "shares": [
+      {
+        "name": "wxedge"
+      },
+      {
+        "name": "wxedge/data"
+      }
+    ]
+  }
+}
