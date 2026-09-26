@@ -1,0 +1,6 @@
+#!/bin/bash
+
+### This script is called after the user installs the application.
+### docker-compose.yaml 已内置，数据目录由 data-share 自动创建，无需额外处理。
+
+exit 0
