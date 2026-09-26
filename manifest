@@ -1,0 +1,14 @@
+appname = wxedge
+version = 1.0.6
+display_name = 网心云
+desc = 一键部署网心云容器魔方（wxedge）。安装后自动拉取官方镜像并启动容器，开机自启；打开应用即可进入激活页面，用网心云 App 扫码绑定设备后自动贡献闲置带宽赚取收益，支持查看设备状态与收益。
+platform = x86
+source = thirdparty
+maintainer = 一起瞎折腾
+distributor = 一起瞎折腾
+os_min_version = 0.8.0
+service_port = 5316
+checkport = false
+ctl_stop = true
+desktop_uidir = ui
+desktop_applaunchname = wxedge.Application
